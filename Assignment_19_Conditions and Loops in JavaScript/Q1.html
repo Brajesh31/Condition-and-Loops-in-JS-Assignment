@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Conditional statements</h2>
+  <p>Conditional statements, also known as decision-making statements, are used in programming to execute different blocks of code based on certain conditions. These conditions determine which block of code should be executed.</p>
+  <p>There are mainly three types of conditional statements in JavaScript:</p>
+  <ol>
+    <li><b>if statement: </b>It executes a block of code if a specified condition is true.
+    </li>
+    <li><b>if....else statement:</b>It executes a block of code if a specified condition is true; otherwise, it executes another block of code.</li>
+    <li><b>switch statement:</b>It selects one of many code blocks to be executed.</li>
+  </ol>
+  
+<hr>
+  <ol>
+    <li><b>if statement:</b>
+    if(condition){
+      //code block will execute if condition is true
+      Example:
+      <img src="asset/asset_1.png" alt="">
+      <script>
+        let age =20;
+        if (age>=18){
+          console.log("You are adult");
+        }
+      </script>
+    }
+    <hr>
+    </li>
+    <li>
+      <b>if...else statement</b>
+      if(condition){
+        //code of block to be executed if condition is true
+      }
+      else{
+        //code of block to be executed if condition is false
+      }
+      Example:
+      <img src="asset/asset_2.png" alt="">
+      <script>
+        let temperature = 28
+        if (temperature>30){
+          console.log("It is too hot.")
+        }
+        else{
+          console.log("It is a pleasant weather.")
+        }
+      </script>
+      <hr>
+    </li>
+    <li>
+      <b>switch statement</b>
+      switch (expression){
+        case value1:
+          //Code block to be executed if expression equals value1
+          break;
+        case value2:
+          //Code block to be executed if expression equals value2
+          break;
+        default:
+          // Code block to be executed if expression doesn't match any case 
+      }
+      Example:
+      <img src="asset/asset_3.png" alt="">
+      <script>
+        let day="Monday";
+        switch (day){
+          case "Monday":
+            console.log("Today is Monday")
+            break;
+          case "Tuesday":
+            console.log("Today is Tuesdy")
+            break;
+          default:
+            console.log("Today is not Monday or Tuesday.");
+        }
+      </script>
+    </li>
+  </ol>
+</body>
+</html>
