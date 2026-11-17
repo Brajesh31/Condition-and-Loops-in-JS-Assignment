@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc">
+<title id="title">Conditional decision flow</title>
+<desc id="desc">A condition is evaluated. True follows the yes branch, false follows the no branch, and both continue.</desc>
+<rect width="1100" height="420" rx="24" fill="#f8fafc"/>
+<text x="55" y="60" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">Conditional Decision Flow</text>
+<g font-family="Arial" font-size="22" text-anchor="middle">
+<rect x="60" y="170" width="180" height="90" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="150" y="224" fill="#1e3a8a">Start</text>
+<path d="M390 215 L500 125 L610 215 L500 305Z" fill="#fef3c7" stroke="#d97706" stroke-width="3"/><text x="500" y="222" fill="#78350f">Condition?</text>
+<rect x="760" y="90" width="250" height="85" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/><text x="885" y="142" fill="#14532d">Run true branch</text>
+<rect x="760" y="255" width="250" height="85" rx="18" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/><text x="885" y="307" fill="#7f1d1d">Run false branch</text>
+</g>
+<g stroke="#475569" stroke-width="4" fill="none"><path d="M240 215 H390"/><path d="M610 215 L680 132 H760"/><path d="M610 215 L680 297 H760"/></g>
+<g fill="#475569"><path d="M380 206 L395 215 L380 224Z"/><path d="M750 123 L765 132 L750 141Z"/><path d="M750 288 L765 297 L750 306Z"/></g>
+<g font-family="Arial" font-size="18" font-weight="700" fill="#334155"><text x="670" y="110">TRUE</text><text x="670" y="330">FALSE</text></g>
+</svg>

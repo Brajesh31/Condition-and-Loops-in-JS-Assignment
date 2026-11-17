@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title id="title">JavaScript control flow mark</title>
+<desc id="desc">A branching decision diamond and a looping arrow representing conditions and loops.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+<rect x="8" y="8" width="240" height="240" rx="52" fill="#111827"/>
+<path d="M128 40 L178 90 L128 140 L78 90Z" fill="url(#g)" stroke="#bfdbfe" stroke-width="5"/>
+<path d="M128 140 V174 C128 205 83 211 65 187 C48 164 64 143 83 139" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+<path d="M72 124 L87 139 L69 150" fill="none" stroke="#38bdf8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M128 140 V172 C128 197 171 211 191 185" fill="none" stroke="#a78bfa" stroke-width="10" stroke-linecap="round"/>
+<path d="M177 183 L192 185 L194 169" fill="none" stroke="#a78bfa" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="128" cy="90" r="12" fill="#fff"/>
+</svg>
