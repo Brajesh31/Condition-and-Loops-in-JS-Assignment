@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/assets/control-flow-logo.svg" width="88" alt="JavaScript control flow logo" />
+
 ![Conditions and Loops in JavaScript](docs/assets/project-banner.svg)
 
 # 🔀 Conditions & Loops in JavaScript
