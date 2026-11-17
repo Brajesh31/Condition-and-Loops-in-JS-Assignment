@@ -6,7 +6,11 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 SKIP = {".git", "node_modules", ".venv", "__pycache__"}
 extensions = {".html", ".js", ".ts", ".json", ".yml", ".yaml", ".py", ".md", ".env"}
-markers = ("-----BEGIN PRIVATE KEY-----", "-----BEGIN RSA PRIVATE KEY-----", "-----BEGIN OPENSSH PRIVATE KEY-----")
+markers = (
+    "-----BEGIN " + "PRIVATE KEY-----",
+    "-----BEGIN RSA " + "PRIVATE KEY-----",
+    "-----BEGIN OPENSSH " + "PRIVATE KEY-----",
+)
 errors = []
 for path in ROOT.rglob("*"):
     if not path.is_file() or any(part in SKIP for part in path.parts):
