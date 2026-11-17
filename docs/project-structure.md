@@ -1,6 +1,6 @@
 # 📁 Complete Repository Structure
 
-This is the tracked file tree generated from the current GitHub main-branch tree. It is intended to stay synchronized with the repository as files are added or removed.
+This tree is generated from the current tracked GitHub main-branch tree.
 
 ```text
 .
@@ -51,6 +51,8 @@ This is the tracked file tree generated from the current GitHub main-branch tree
 ├── docs/
 │   ├── assets/
 │   │   ├── architecture-overview.svg
+│   │   ├── control-flow-logo.svg
+│   │   ├── decision-flow.svg
 │   │   ├── loop-lifecycle.svg
 │   │   └── project-banner.svg
 │   ├── templates/
@@ -235,20 +237,15 @@ This is the tracked file tree generated from the current GitHub main-branch tree
 | `asset/` | Seven original instructional PNG images |
 | `OutPut/` | Three existing Q1-Q3 screenshots |
 | `docs/` | Product, learning, architecture, development, security, accessibility, testing, privacy, operations, and maintenance documentation |
-| `docs/assets/` | Original SVG banner and architecture/loop diagrams |
-| `docs/templates/` | Reusable engineering, testing, security, accessibility, deployment, and maintenance templates |
+| `docs/assets/` | Original SVG banner, logo, architecture, decision, and loop diagrams |
+| `docs/templates/` | 23 reusable engineering, testing, security, accessibility, release, and maintenance templates |
 | `scripts/` | Python validation utilities |
-| Root governance files | License, contributor rules, security policy, support, changelog, and roadmap |
 
 ## ⚙️ Runtime entry points
-There is no shared application entry point. Each Q1-Q5 HTML file is opened independently in a browser. JavaScript is embedded in each page. There is no frontend/backend split, route configuration, database, API, or application build output.
+There is no shared application entry point. Each Q1-Q5 HTML file is opened independently in a browser. JavaScript is embedded in the page. There is no frontend/backend split, route configuration, database, API, or application build output.
 
 ## 🧰 Tooling and configuration
-- EditorConfig, Git attributes, and ignore rules support consistent repository maintenance.
-- Markdownlint settings support Markdown quality checks.
-- Gitleaks configuration is included for secret-scanning tools that support it.
-- Python scripts check exercise files, links, structure, Markdown hygiene, and limited secret markers.
-- GitHub Actions automate selected checks. Workflow presence does not imply a successful run.
+EditorConfig, Git attributes, ignore rules, Markdown lint settings, and Gitleaks configuration support repository maintenance. No runtime environment variables are currently needed. Python scripts check exercise files, links, structure, Markdown hygiene, and limited private-key markers.
 
 ## 🔍 Keeping this tree accurate
 After adding or removing files, regenerate this tree from the GitHub repository tree or update it and verify every path. Do not list untracked local files as repository content.
