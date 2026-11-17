@@ -1,13 +1,14 @@
-# 📁 Complete Project Structure
+# 📁 Complete Repository Structure
 
-This tree reflects the repository's actual tracked file layout. It includes the original assignment files and the documentation/governance additions.
+This is the tracked file tree generated from the current GitHub main-branch tree. It is intended to stay synchronized with the repository as files are added or removed.
 
 ```text
 .
 ├── .github/
-│   ├── CODEOWNERS
-│   ├── FUNDING.yml
-│   ├── dependabot.yml
+│   ├── DISCUSSION_TEMPLATE/
+│   │   ├── announcements.yml
+│   │   ├── ideas.yml
+│   │   └── questions.yml
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── accessibility_report.yml
 │   │   ├── bug_report.yml
@@ -16,27 +17,28 @@ This tree reflects the repository's actual tracked file layout. It includes the 
 │   │   ├── feature_request.yml
 │   │   ├── performance_issue.yml
 │   │   └── security_report.yml
-│   ├── DISCUSSION_TEMPLATE/
-│   │   ├── announcements.yml
-│   │   ├── ideas.yml
-│   │   └── questions.yml
 │   ├── workflows/
-│   │   ├── README.md
 │   │   ├── docs-validation.yml
 │   │   ├── quality.yml
+│   │   ├── README.md
 │   │   ├── security-scan.yml
 │   │   ├── stale.yml
 │   │   └── update-readme.yml
+│   ├── CODEOWNERS
+│   ├── dependabot.yml
+│   ├── FUNDING.yml
 │   └── PULL_REQUEST_TEMPLATE.md
+├── .idea/
+│   └── .gitignore
 ├── Assignment_19_Conditions and Loops in JavaScript/
 │   ├── asset/
+│   │   ├── asset_1.png
+│   │   ├── asset_2.png
+│   │   ├── asset_3.png
 │   │   ├── asset4.png
 │   │   ├── asset5.png
 │   │   ├── asset6.png
-│   │   ├── asset7.png
-│   │   ├── asset_1.png
-│   │   ├── asset_2.png
-│   │   └── asset_3.png
+│   │   └── asset7.png
 │   ├── OutPut/
 │   │   ├── q1.png
 │   │   ├── q2.png
@@ -52,7 +54,6 @@ This tree reflects the repository's actual tracked file layout. It includes the 
 │   │   ├── loop-lifecycle.svg
 │   │   └── project-banner.svg
 │   ├── templates/
-│   │   ├── README.md
 │   │   ├── accessibility-audit-template.md
 │   │   ├── adr-template.md
 │   │   ├── api-documentation-template.md
@@ -69,6 +70,7 @@ This tree reflects the repository's actual tracked file layout. It includes the 
 │   │   ├── migration-template.md
 │   │   ├── project-status-template.md
 │   │   ├── qa-test-case-template.md
+│   │   ├── README.md
 │   │   ├── release-checklist.md
 │   │   ├── risk-assessment-template.md
 │   │   ├── rollback-checklist.md
@@ -76,13 +78,130 @@ This tree reflects the repository's actual tracked file layout. It includes the 
 │   │   ├── test-plan-template.md
 │   │   ├── test-report-template.md
 │   │   └── threat-assessment-template.md
-│   ├── README.md
+│   ├── access-control.md
+│   ├── accessibility-guidelines.md
+│   ├── accessibility-testing.md
+│   ├── accessibility.md
+│   ├── application-lifecycle.md
+│   ├── architecture-decisions.md
+│   ├── architecture.md
+│   ├── audit-logging.md
+│   ├── authentication.md
+│   ├── authorization.md
+│   ├── backup-and-restore.md
+│   ├── branding-guidelines.md
+│   ├── bug-reporting.md
+│   ├── building.md
+│   ├── ci-cd.md
+│   ├── code-standards.md
+│   ├── coding-guidelines.md
+│   ├── color-contrast.md
+│   ├── commands-reference.md
+│   ├── compatibility.md
+│   ├── compliance.md
+│   ├── component-architecture.md
+│   ├── configuration.md
+│   ├── consent-management.md
+│   ├── contributor-guide.md
+│   ├── cookie-policy.md
+│   ├── data-deletion.md
+│   ├── data-privacy.md
+│   ├── data-protection.md
+│   ├── data-retention.md
+│   ├── debugging.md
+│   ├── decision-log.md
+│   ├── dependencies.md
+│   ├── dependency-security.md
+│   ├── deployment.md
+│   ├── deprecation-policy.md
+│   ├── design-patterns.md
+│   ├── developer-guide.md
+│   ├── development-workflow.md
+│   ├── diagrams.md
+│   ├── disaster-recovery.md
+│   ├── e2e-testing.md
+│   ├── encryption.md
+│   ├── environment-setup.md
+│   ├── environment-variables.md
+│   ├── error-handling.md
 │   ├── exercises-guide.md
+│   ├── faq.md
+│   ├── features.md
+│   ├── functional-requirements.md
+│   ├── getting-started.md
+│   ├── github-actions.md
+│   ├── glossary.md
+│   ├── health-checks.md
+│   ├── hosting.md
+│   ├── incident-response.md
+│   ├── infrastructure.md
+│   ├── installation.md
+│   ├── integration-testing.md
 │   ├── javascript-concepts.md
-│   └── project-structure.md
-├── scripts/
+│   ├── keyboard-navigation.md
+│   ├── known-issues.md
+│   ├── legal-considerations.md
+│   ├── local-development.md
+│   ├── logging.md
+│   ├── maintainer-guide.md
+│   ├── maintenance.md
+│   ├── migration-guide.md
+│   ├── module-documentation.md
+│   ├── monitoring.md
+│   ├── navigation-structure.md
+│   ├── non-functional-requirements.md
+│   ├── observability.md
+│   ├── operations.md
+│   ├── page-documentation.md
+│   ├── performance-testing.md
+│   ├── performance.md
+│   ├── privacy.md
+│   ├── problem-statement.md
+│   ├── product-overview.md
+│   ├── production-setup.md
+│   ├── project-background.md
+│   ├── project-objectives.md
+│   ├── project-status.md
+│   ├── project-structure.md
+│   ├── qa.md
+│   ├── quality-gates.md
 │   ├── README.md
+│   ├── release-management.md
+│   ├── risk-register.md
+│   ├── rollback.md
+│   ├── running-locally.md
+│   ├── scalability.md
+│   ├── scope-and-limitations.md
+│   ├── screen-reader-support.md
+│   ├── secret-management.md
+│   ├── security-architecture.md
+│   ├── security-best-practices.md
+│   ├── security-testing.md
+│   ├── solution-overview.md
+│   ├── system-design.md
+│   ├── technical-debt.md
+│   ├── technical-overview.md
+│   ├── technology-stack.md
+│   ├── test-coverage.md
+│   ├── test-plan.md
+│   ├── test-strategy.md
+│   ├── testing.md
+│   ├── threat-assessment.md
+│   ├── threat-model.md
+│   ├── troubleshooting.md
+│   ├── ui-ux-guidelines.md
+│   ├── unit-testing.md
+│   ├── upgrade-guide.md
+│   ├── use-cases.md
+│   ├── user-journeys.md
+│   ├── user-personas.md
+│   ├── versioning.md
+│   ├── visual-regression-testing.md
+│   ├── vulnerability-management.md
+│   └── wcag-compliance.md
+├── scripts/
 │   ├── check-project-structure.py
+│   ├── README.md
 │   ├── security-check.py
 │   ├── validate-docs.py
 │   ├── validate-exercises.py
@@ -109,19 +228,27 @@ This tree reflects the repository's actual tracked file layout. It includes the 
 
 | Directory or file | Responsibility |
 |---|---|
+| `.github/ISSUE_TEMPLATE/` | Structured bug, feature, documentation, security, accessibility, and performance reports |
+| `.github/DISCUSSION_TEMPLATE/` | Announcement, idea, and question discussion forms |
+| `.github/workflows/` | Quality, documentation, security heuristic, stale triage, and manual maintenance automation |
 | Assignment directory | Original five standalone HTML exercises |
-| asset/ | Seven original instructional PNGs referenced by Q1-Q3 |
-| OutPut/ | Three existing output screenshots for Q1-Q3 |
-| docs/ | Product, architecture, development, security, accessibility, quality, privacy, operations, and maintainer guidance |
-| docs/assets/ | Original SVG banner and architecture/loop illustrations |
-| docs/templates/ | Reusable architecture, feature, test, security, accessibility, release, and maintenance templates |
-| scripts/ | Python validation utilities |
-| .github/ISSUE_TEMPLATE/ | Structured issue forms |
-| .github/DISCUSSION_TEMPLATE/ | Discussion templates |
-| .github/workflows/ | Repository validation, security heuristic, and stale triage automation |
+| `asset/` | Seven original instructional PNG images |
+| `OutPut/` | Three existing Q1-Q3 screenshots |
+| `docs/` | Product, learning, architecture, development, security, accessibility, testing, privacy, operations, and maintenance documentation |
+| `docs/assets/` | Original SVG banner and architecture/loop diagrams |
+| `docs/templates/` | Reusable engineering, testing, security, accessibility, deployment, and maintenance templates |
+| `scripts/` | Python validation utilities |
+| Root governance files | License, contributor rules, security policy, support, changelog, and roadmap |
 
 ## ⚙️ Runtime entry points
-There is no shared application entry point. Each Q1-Q5 HTML file is opened independently. JavaScript is embedded in the page. There is no frontend/backend split, route configuration, database, API, or application build output.
+There is no shared application entry point. Each Q1-Q5 HTML file is opened independently in a browser. JavaScript is embedded in each page. There is no frontend/backend split, route configuration, database, API, or application build output.
 
-## 🔍 Configuration
-The root EditorConfig, Git attributes, ignore rules, Markdown lint settings, and Gitleaks configuration support repository maintenance. No runtime environment variables are currently needed.
+## 🧰 Tooling and configuration
+- EditorConfig, Git attributes, and ignore rules support consistent repository maintenance.
+- Markdownlint settings support Markdown quality checks.
+- Gitleaks configuration is included for secret-scanning tools that support it.
+- Python scripts check exercise files, links, structure, Markdown hygiene, and limited secret markers.
+- GitHub Actions automate selected checks. Workflow presence does not imply a successful run.
+
+## 🔍 Keeping this tree accurate
+After adding or removing files, regenerate this tree from the GitHub repository tree or update it and verify every path. Do not list untracked local files as repository content.
