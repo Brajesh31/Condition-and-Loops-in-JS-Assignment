@@ -1,89 +1,149 @@
-# 🔀 Conditions & Loops in JavaScript
-
 <div align="center">
+
+![Conditions and Loops in JavaScript](docs/assets/project-banner.svg)
+
+# 🔀 Conditions & Loops in JavaScript
 
 ### Assignment 19 | JavaScript fundamentals, decision making, and iteration
 
 [![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Exercises](https://img.shields.io/badge/Exercises-5-blue)](#-assignment-map)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Quality](https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment/actions/workflows/quality.yml/badge.svg)](https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment/actions/workflows/quality.yml)
+[![Docs](https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment/actions/workflows/docs-validation.yml/badge.svg)](https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment/actions/workflows/docs-validation.yml)
 
-**A beginner-friendly collection of HTML-based JavaScript exercises covering conditional statements and loops.**
+**A beginner-friendly set of five standalone HTML exercises for understanding JavaScript conditions, decisions, and loops.**
+
+[📚 Documentation](docs/README.md) · [🧪 Exercise guide](docs/exercises-guide.md) · [🤝 Contributing](CONTRIBUTING.md) · [🔒 Security](SECURITY.md)
 
 </div>
 
-## 📚 Contents
-- [🎯 Overview](#-overview)
+---
+
+## 📌 Table of Contents
+
+- [🎯 Project overview](#-project-overview)
 - [🧠 Learning objectives](#-learning-objectives)
-- [🗂️ Assignment map](#-assignment-map)
-- [🖥️ Run the exercises](#️-run-the-exercises)
-- [🔎 Concepts](#-concepts-explained)
-- [🧭 Diagrams](#-program-flow-diagrams)
-- [📸 Screenshots](#-existing-output-evidence)
-- [🧪 Testing](#-validation-and-testing)
-- [📁 Structure](#-repository-structure)
-- [🛡️ Security and accessibility](#️-security-and-accessibility)
-- [🗺️ Roadmap](#️-roadmap-and-limitations)
+- [✨ Assignment features](#-assignment-features)
+- [🗂️ Exercise map](#️-exercise-map)
+- [🖥️ Installation and setup](#️-installation-and-setup)
+- [▶️ Run the exercises](#️-run-the-exercises)
+- [🔎 Concepts and examples](#-concepts-and-examples)
+- [🧭 Architecture and diagrams](#-architecture-and-diagrams)
+- [📸 Screenshots and assets](#-screenshots-and-assets)
+- [📁 Repository structure](#-repository-structure)
+- [🧪 Testing and quality](#-testing-and-quality)
+- [♿ Accessibility](#-accessibility)
+- [🔐 Security and privacy](#-security-and-privacy)
+- [⚡ Performance](#-performance)
+- [🗺️ Roadmap and known limitations](#️-roadmap-and-known-limitations)
+- [❓ FAQ](#-faq)
 - [🤝 Contributing](#-contributing)
-- [📖 Documentation](#-documentation-index)
+- [📚 Documentation index](#-documentation-index)
+- [👤 Author and license](#-author-and-license)
 
-## 🎯 Overview
-This repository contains **Assignment 19: Conditions and Loops in JavaScript**. Five standalone HTML exercises under `Assignment_19_Conditions and Loops in JavaScript/` embed their JavaScript in script elements and can be opened directly in a modern browser.
+## 🎯 Project overview
 
-Topics include `if`, `if...else`, `else if`, `switch`, `for`, `while`, and `do...while`; a grade classification example; numeric range iteration; and ascending/descending output.
+**Conditions & Loops in JavaScript** is a small educational assignment containing five independent HTML pages. Each page embeds JavaScript and demonstrates a specific control-flow concept. Open a page in a browser and inspect its output in Developer Tools.
 
-> ℹ️ This is a static educational repository, not a deployed web application. The current source has no server, database, API, login system, or build pipeline.
+### 🧩 Problem statement
+Beginners need to understand how conditions select a branch, how loops repeat work, and how counter updates affect the final output. Off-by-one errors are especially confusing when the displayed expression differs from the loop counter.
+
+### 💡 Solution
+The assignment isolates examples into Q1-Q5 so learners can trace one concept at a time without installing a framework or setting up a backend.
+
+### 📦 Project scope
+This is a **static HTML and JavaScript learning repository**, not a deployed web application. The checked-in source has no backend, database, API, authentication, account system, router, package manager, or build pipeline.
 
 ## 🧠 Learning objectives
-Learners should be able to evaluate Boolean expressions, choose conditional structures, order branches correctly, trace loop initialization and updates, predict console output, and identify off-by-one errors.
 
-## 🗂️ Assignment map
-| Exercise | File | Topic | Existing behavior |
+After completing the assignment, learners should be able to:
+
+- Evaluate Boolean conditions and predict branch execution.
+- Use `if`, `if...else`, `else if`, and `switch`.
+- Understand ordered condition evaluation and switch `break`.
+- Compare `for`, `while`, and `do...while`.
+- Trace initialization, condition checks, loop bodies, and updates.
+- Distinguish the loop counter from the value printed.
+- Identify loop termination and off-by-one errors.
+- Explain why a post-test loop executes at least once.
+
+## ✨ Assignment features
+
+| Feature | Exercise | Learning outcome |
+|---|---|---|
+| Conditional branching | Q1 | Select code paths using conditions |
+| Switch-case selection | Q1 | Match a value to a case |
+| Grade classification | Q2 | Evaluate ordered thresholds |
+| Three loop structures | Q3 | Compare loop execution models |
+| Numeric range output | Q4 | Trace counter boundaries |
+| Ascending and descending output | Q5 | Understand counter transformations |
+
+The repository also contains seven original instructional images and three existing output screenshots.
+
+## 🗂️ Exercise map
+
+| Exercise | File | Concept | Existing behavior |
 |---|---|---|---|
-| Q1 | [Q1.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q1.html) | Conditional statements | `if`, `if...else`, `switch` |
-| Q2 | [Q2.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q2.html) | Grade classification | Ordered `if / else if / else` |
-| Q3 | [Q3.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q3.html) | Loop fundamentals | Three loop types |
-| Q4 | [Q4.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q4.html) | Numeric range | Logs 6 through 15 |
-| Q5 | [Q5.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q5.html) | Counting | Ascending 1-25, descending 24-1 |
+| Q1 | [Q1.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q1.html) | Conditions and switch | Age 20, temperature 28, Monday |
+| Q2 | [Q2.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q2.html) | Grade classification | Marks 80 selects grade B |
+| Q3 | [Q3.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q3.html) | for, while, do...while | Five iterations per loop |
+| Q4 | [Q4.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q4.html) | Numeric range | Displays 6 through 15 |
+| Q5 | [Q5.html](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/Q5.html) | Counting | 1-25, then 24-1 |
 
-### 🔍 Exact exercise behavior
-- **Q1:** age 20 logs `You are adult`; temperature 28 logs `It is a pleasant weather.`; day `Monday` logs `Today is Monday`.
-- **Q2:** `marks = 80` selects the second branch and logs `grade B`.
-- **Q3:** each of the three loops logs five numbered messages.
-- **Q4:** the loop counter runs from 5 through 14, while the logged expression is `i + 1`, producing 6 through 15. `num1` and `num2` are declared but unused.
-- **Q5:** the first loop logs 1 through 25. The second logs 24 down through 1 because it outputs `j - 1` while `j > 1`.
+### 🔍 Exact behavior notes
 
-These are source-derived behavior notes, not automated test claims.
+- **Q1:** The age check logs `You are adult`; temperature 28 logs `It is a pleasant weather.`; the Monday switch case logs `Today is Monday`.
+- **Q2:** `marks = 80` fails the first threshold and matches the second, logging `grade B`.
+- **Q3:** The `for`, `while`, and `do...while` examples each log five numbered messages.
+- **Q4:** The counter begins at 5 and runs while less than 15. The script logs `i + 1`, so the visible values are 6 through 15. The declared `num1` and `num2` variables are unused.
+- **Q5:** The ascending loop logs `i + 1` for counter values 0-24, displaying 1-25. The descending loop logs `j - 1` while `j > 1`, displaying 24-1.
 
-## 🖥️ Run the exercises
-### Option A: Browser
-1. Clone or download the repository.
-2. Open a `Q*.html` file in a modern browser.
+These details are derived from the existing exercise source. They are not claims of automated browser testing.
+
+## 🖥️ Installation and setup
+
+### Requirements
+- A modern browser with JavaScript enabled.
+- Git, if you want to clone the repository.
+- Python 3, only for optional validation or a local static server.
+
+There is no npm install, package manager setup, environment variable configuration, database provisioning, or build command.
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment.git
+cd Condition-and-Loops-in-JS-Assignment
+```
+
+You can also download the repository as a ZIP from GitHub.
+
+## ▶️ Run the exercises
+
+### Option 1: Open directly
+1. Open the folder `Assignment_19_Conditions and Loops in JavaScript`.
+2. Open any `Q1.html` through `Q5.html` file in a browser.
 3. Open Developer Tools with **F12** or **Ctrl + Shift + I**.
-4. Select **Console**, then reload the page.
+4. Select **Console**.
+5. Reload the page and inspect the output.
 
-No package installation or environment variables are required.
+### Option 2: Optional local static server
 
-### Option B: Local static server
+From the repository root:
+
 ```bash
 python -m http.server 8000
 ```
-Open `http://localhost:8000/` and navigate to the assignment folder. Direct file opening also works.
 
-### Option C: Node.js
-The exercises are HTML files, not standalone JavaScript modules. Copy the relevant script contents into a temporary `.js` file before running `node exercise.js`.
+Open [http://localhost:8000/](http://localhost:8000/) and navigate into the assignment directory. This serves static files only. It does not create a backend.
 
-## 🔎 Concepts explained
+## 🔎 Concepts and examples
+
 ### 🧭 Conditional statements
-| Structure | Purpose |
-|---|---|
-| `if` | Run code when a condition is truthy |
-| `if...else` | Choose between two branches |
-| `else if` | Evaluate multiple ordered conditions |
-| `switch` | Match an expression to case values |
 
-```js
+```javascript
 const score = 80;
+
 if (score >= 90) {
   console.log("Grade A");
 } else if (score >= 70) {
@@ -94,169 +154,217 @@ if (score >= 90) {
   console.log("Grade F");
 }
 ```
-Conditions are evaluated top to bottom. The first matching branch runs. Validate input ranges separately in a real grading application.
 
-### 🔁 Loop statements
-| Loop | Condition check | Minimum executions |
+Conditions are evaluated from top to bottom. The first matching branch runs. For range-based grading, order thresholds carefully and validate the allowed score range separately.
+
+### 🔁 Loop structures
+
+| Loop | Condition timing | Minimum executions |
 |---|---|---:|
 | `for` | Before each iteration | 0 |
 | `while` | Before each iteration | 0 |
-| `do...while` | After each iteration | 1 |
+| `do...while` | After the body | 1 |
 
-```js
-for (let index = 1; index <= 5; index++) console.log(index);
-
-let count = 1;
-while (count <= 5) {
+```javascript
+for (let count = 1; count <= 5; count++) {
   console.log(count);
-  count++;
 }
 
-let attempt = 1;
+let whileCount = 1;
+while (whileCount <= 5) {
+  console.log(whileCount);
+  whileCount++;
+}
+
+let doCount = 1;
 do {
-  console.log(attempt);
-  attempt++;
-} while (attempt <= 5);
+  console.log(doCount);
+  doCount++;
+} while (doCount <= 5);
 ```
 
 ### ⚠️ Common mistakes
-- Forgetting to update a loop variable, creating an infinite loop.
-- Using `<` instead of `<=`, or vice versa.
-- Placing a broad `else if` before a narrower condition.
-- Forgetting `break` in a `switch` when fall-through is not intended.
+- Forgetting to update a loop variable.
+- Using `<` when `<=` was intended.
+- Placing a broad condition before a narrower condition.
+- Forgetting `break` in a switch when fall-through is unintended.
 - Assuming `do...while` can execute zero times.
-- Confusing the loop counter with the logged value.
+- Logging a transformed counter and then assuming it is the counter itself.
 
-## 🧭 Program flow diagrams
-### Conditional decision
+## 🧭 Architecture and diagrams
+
+### Static assignment architecture
+
+![Architecture overview](docs/assets/architecture-overview.svg)
+
+The browser loads one independent HTML page, executes its inline JavaScript, loads any referenced local images, and sends output to Developer Tools.
+
+### Loop lifecycle
+
+![Loop lifecycle diagram](docs/assets/loop-lifecycle.svg)
+
+### Conditional decision flow
+
 ```mermaid
 flowchart TD
   A([Start]) --> B[Evaluate condition]
   B --> C{Condition true?}
-  C -->|Yes| D[Run if block]
-  C -->|No| E[Run else block, if present]
+  C -->|Yes| D[Run matching branch]
+  C -->|No| E[Evaluate next branch or fallback]
   D --> F([Continue])
   E --> F
 ```
 
-### Grade classification
+### Learner workflow
+
 ```mermaid
 flowchart TD
-  A([Start]) --> B[Set marks]
-  B --> C{marks >= 90?}
-  C -->|Yes| D[Grade A]
-  C -->|No| E{marks >= 70?}
-  E -->|Yes| F[Grade B]
-  E -->|No| G{marks >= 50?}
-  G -->|Yes| H[Grade C]
-  G -->|No| I[Grade F]
-  D --> J([End])
-  F --> J
-  H --> J
-  I --> J
+  A([Choose exercise]) --> B[Open Q1-Q5 HTML]
+  B --> C[Browser parses document]
+  C --> D[Inline JavaScript executes]
+  D --> E[Console output]
+  E --> F[Trace condition or counter]
+  F --> G([Understand result])
 ```
 
-### Loop lifecycle
-```mermaid
-flowchart TD
-  A([Start]) --> B[Initialize counter]
-  B --> C{Condition true?}
-  C -->|Yes| D[Execute body]
-  D --> E[Update counter]
-  E --> C
-  C -->|No| F([Exit])
-```
+More diagrams, including grade selection, loop sequence, and validation workflow, are in [docs/diagrams.md](docs/diagrams.md).
 
-### Choosing a loop
-```mermaid
-flowchart TD
-  A([Need repetition]) --> B{Must run at least once?}
-  B -->|Yes| C[do...while]
-  B -->|No| D{Known counter pattern?}
-  D -->|Yes| E[for]
-  D -->|No| F[while]
-```
+## 📸 Screenshots and assets
 
-## 📸 Existing output evidence
-Three screenshot files already exist and are preserved.
+### Existing output screenshots
 
-| Evidence | Preview |
+| Exercise | Screenshot |
 |---|---|
-| Q1 | ![Existing Q1 output](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/OutPut/q1.png) |
-| Q2 | ![Existing Q2 output](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/OutPut/q2.png) |
-| Q3 | ![Existing Q3 output](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/OutPut/q3.png) |
+| Q1 | ![Q1 existing output](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/OutPut/q1.png) |
+| Q2 | ![Q2 existing output](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/OutPut/q2.png) |
+| Q3 | ![Q3 existing output](Assignment_19_Conditions%20and%20Loops%20in%20JavaScript/OutPut/q3.png) |
 
-The original `asset/` folder contains seven instructional images referenced by Q1-Q3.
+The original seven teaching images remain under the assignment's `asset/` directory. Q4 and Q5 do not currently have output screenshots. No mock screenshots have been added.
 
-## 🧪 Validation and testing
-The original repository has no package manager, test framework, linter, or browser automation. A structural validator is provided at `scripts/validate-exercises.py`.
+## 📁 Repository structure
+
+The complete tracked directory tree and explanation of each important file are maintained in [docs/project-structure.md](docs/project-structure.md).
+
+Top-level layout:
+
+```text
+.
+├── .github/       # Issue forms, discussion templates, workflows
+├── Assignment.../ # Original Q1-Q5 pages, assets, screenshots
+├── docs/          # Product, technical, security, quality, and operations docs
+│   ├── assets/    # Original SVG diagrams and banner
+│   └── templates/ # Reusable engineering templates
+├── scripts/       # Python repository validation utilities
+├── README.md
+├── LICENSE
+├── SECURITY.md
+├── CONTRIBUTING.md
+└── CHANGELOG.md
+```
+
+## 🧪 Testing and quality
+
+### Structural checks
 
 ```bash
 python scripts/validate-exercises.py
+python scripts/check-project-structure.py
+python scripts/validate-docs.py
+python scripts/validate-markdown.py
+python scripts/security-check.py
 ```
-It checks the five exercise files, basic HTML markers, script blocks, and local image references in Q1-Q3. It does not execute JavaScript or prove browser rendering correctness.
 
-## 📁 Repository structure
-```text
-.
-├── .github/                  # Issue forms, workflows, PR template
-├── Assignment_19_Conditions and Loops in JavaScript/
-│   ├── asset/                # Original instructional images
-│   ├── OutPut/               # Existing output screenshots
-│   ├── Q1.html               # Conditional examples
-│   ├── Q2.html               # Grade classification
-│   ├── Q3.html               # Loop examples
-│   ├── Q4.html               # Numeric range
-│   └── Q5.html               # Ascending / descending
-├── docs/                     # Learning and maintainer documentation
-├── scripts/                  # Repository validation utilities
-├── .editorconfig
-├── .gitattributes
-├── .gitignore
-├── CHANGELOG.md
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── ROADMAP.md
-├── SECURITY.md
-└── README.md
-```
-See [detailed structure guide](docs/project-structure.md).
+These checks cover repository structure, basic HTML markers, referenced local images, relative Markdown link targets, basic Markdown hygiene, and a limited private-key marker scan.
 
-## 🛡️ Security and accessibility
-- Examples use local hard-coded values and browser console output.
-- Never commit credentials, tokens, or private information.
-- Review external scripts before adding them.
-- Keep document language and viewport metadata.
-- Add meaningful alt text to instructional images when updating lesson pages.
-- Console-only output is not visible to learners who do not open Developer Tools.
+**Important limitations:** the structural validator does not execute JavaScript or render pages. The security script is a heuristic, not a dedicated secret scanner. Manual browser checks remain necessary.
 
-No formal security audit or WCAG conformance test is claimed.
+### Manual test matrix
 
-## 🗺️ Roadmap and limitations
-See [ROADMAP.md](ROADMAP.md). Potential improvements include expected-output examples, learner challenges, automated behavior tests, semantic HTML improvements, and an optional on-page output panel.
+| Page | Expected observation |
+|---|---|
+| Q1 | Adult, pleasant-weather, and Monday messages |
+| Q2 | Grade B |
+| Q3 | Three groups of five messages |
+| Q4 | Values 6 through 15 |
+| Q5 | Ascending 1-25, descending 24-1 |
 
-Current limitations: hard-coded examples, console-centric output, no automated test suite, and no backend or deployment service. Q4 declares two unused variables. These limitations are documented honestly.
+GitHub Actions workflows are configured for repository quality, documentation validation, and a basic security heuristic. Check the Actions tab for actual run results before treating any check as passed.
+
+## ♿ Accessibility
+
+The pages are simple educational HTML documents. The repository includes guidance for semantic structure, image alternatives, keyboard use, contrast, zoom, and screen reader review. WCAG 2.2 AA is an improvement target, not a verified conformance claim.
+
+See [Accessibility documentation](docs/accessibility.md).
+
+## 🔐 Security and privacy
+
+- The current exercises use hard-coded values.
+- No application secrets or environment variables are required.
+- No backend, database, authentication, analytics, or application cookies are implemented.
+- Do not commit credentials or private information.
+- Report vulnerabilities privately using [SECURITY.md](SECURITY.md).
+
+See [Security architecture](docs/security-architecture.md), [Threat model](docs/threat-model.md), and [Privacy overview](docs/privacy.md).
+
+## ⚡ Performance
+
+The examples use small fixed loop ranges and constant-time operations. They are learning exercises, not benchmarks. No performance score or SLA is claimed. See [Performance guidance](docs/performance.md).
+
+## 🗺️ Roadmap and known limitations
+
+Potential improvements:
+- Add explicit problem statements and expected output to each exercise page.
+- Add boundary-value practice questions.
+- Add behavior-level automated tests.
+- Improve document titles, semantic structure, and image alternatives.
+- Consider an accessible on-page output panel.
+- Add genuine Q4 and Q5 output evidence if useful.
+
+Current limitations include hard-coded values, Console-only output, no automated JavaScript behavior suite, and no deployed application. See [ROADMAP.md](ROADMAP.md) and [known issues](docs/known-issues.md).
+
+## ❓ FAQ
+
+**Do I need Node.js?**  
+No. The existing pages open directly in a browser.
+
+**Why is there no visible output on the page?**  
+The examples use `console.log`. Open Developer Tools and select Console.
+
+**Is there a database or backend?**  
+No. The repository is a static HTML assignment.
+
+**Why does Q4 start displaying at 6?**  
+The loop counter begins at 5, but the script logs the counter plus one.
+
+**Why does the descending Q5 sequence start at 24?**  
+The counter starts at 25 and the script logs the counter minus one.
+
+**Where are all the docs?**  
+Start at [docs/README.md](docs/README.md).
 
 ## 🤝 Contributing
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Keep examples beginner-friendly, preserve assignment intent, test changed pages in a browser, and update relevant documentation.
 
-## 📖 Documentation index
-| Document | Purpose |
+Contributions that improve correctness, clarity, accessibility, or maintainability are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), use the issue templates, and test changes before opening a pull request.
+
+## 📚 Documentation index
+
+| Category | Documentation |
 |---|---|
-| [Product overview](docs/product-overview.md) | Scope and outcomes |
-| [Exercise guide](docs/exercises-guide.md) | Detailed Q1-Q5 walkthrough |
-| [JavaScript concepts](docs/javascript-concepts.md) | Conditions and loops |
-| [Diagrams](docs/diagrams.md) | Flowcharts and sequence diagrams |
-| [Project structure](docs/project-structure.md) | Directory and file map |
-| [Development](docs/development.md) | Setup and workflow |
-| [Testing](docs/testing.md) | Validation approach |
-| [Accessibility](docs/accessibility.md) | Inclusive HTML practices |
-| [Security](docs/security.md) | Security boundary |
-| [Troubleshooting](docs/troubleshooting.md) | Common problems |
-| [Templates](docs/templates/README.md) | Reusable templates |
+| Project and product | [Overview](docs/product-overview.md) · [Background](docs/project-background.md) · [Objectives](docs/project-objectives.md) · [Requirements](docs/functional-requirements.md) · [Scope](docs/scope-and-limitations.md) |
+| Exercises and learning | [Q1-Q5 guide](docs/exercises-guide.md) · [JavaScript concepts](docs/javascript-concepts.md) · [Glossary](docs/glossary.md) · [FAQ](docs/faq.md) · [Use cases](docs/use-cases.md) |
+| Architecture | [Architecture](docs/architecture.md) · [System design](docs/system-design.md) · [Lifecycle](docs/application-lifecycle.md) · [Diagrams](docs/diagrams.md) · [Project structure](docs/project-structure.md) |
+| Development | [Installation](docs/installation.md) · [Getting started](docs/getting-started.md) · [Local development](docs/local-development.md) · [Debugging](docs/debugging.md) · [Commands](docs/commands-reference.md) |
+| Quality | [Testing](docs/testing.md) · [QA](docs/qa.md) · [Quality gates](docs/quality-gates.md) · [Test plan](docs/test-plan.md) |
+| Security and privacy | [Security](SECURITY.md) · [Threat model](docs/threat-model.md) · [Incident response](docs/incident-response.md) · [Privacy](docs/privacy.md) |
+| Accessibility | [Accessibility](docs/accessibility.md) · [WCAG target](docs/wcag-compliance.md) · [Testing](docs/accessibility-testing.md) |
+| Operations | [Deployment](docs/deployment.md) · [Maintenance](docs/maintenance.md) · [Known issues](docs/known-issues.md) · [Risk register](docs/risk-register.md) |
+| Templates | [Template index](docs/templates/README.md) |
 
-## 📄 License
-Released under the [MIT License](LICENSE).
+For the full catalog, open the [Documentation Hub](docs/README.md).
 
-Last updated: 2026-11-17 23:55 UTC
+## 👤 Author and license
+
+**Maintainer:** Brajesh Kumar  
+**Repository:** [Brajesh31/Condition-and-Loops-in-JS-Assignment](https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment)
+
+This project is licensed under the [MIT License](LICENSE).
