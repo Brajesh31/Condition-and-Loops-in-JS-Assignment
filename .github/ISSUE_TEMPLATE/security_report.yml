@@ -1,0 +1,15 @@
+name: "🔒 Security report"
+description: "Direct security vulnerabilities to the private reporting process."
+title: "[Security]: "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not publish exploit details, secrets, or private information here. Use the private contact route in SECURITY.md instead. This public form is only a signpost."
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand that sensitive vulnerability details must be reported privately.
+          required: true

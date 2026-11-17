@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "🔐 Private security reporting"
+    url: https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment/blob/main/SECURITY.md
+    about: "Read the private vulnerability disclosure instructions."
+  - name: "📚 Documentation"
+    url: https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment/tree/main/docs
+    about: "Browse the assignment and maintainer documentation."

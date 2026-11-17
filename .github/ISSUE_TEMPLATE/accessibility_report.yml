@@ -1,0 +1,24 @@
+name: "♿ Accessibility report"
+description: "Report an accessibility barrier in a learning page or its documentation."
+title: "[Accessibility]: "
+labels: ["accessibility"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Exercise or document
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Describe the barrier
+      description: Include steps, expected result, and actual result.
+    validations:
+      required: true
+  - type: input
+    id: assistive_technology
+    attributes:
+      label: Browser or assistive technology
+    validations:
+      required: false

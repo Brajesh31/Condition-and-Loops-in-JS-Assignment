@@ -1,0 +1,23 @@
+name: "⚡ Performance or responsiveness issue"
+description: "Report a reproducible slow or unresponsive exercise."
+title: "[Performance]: "
+labels: ["performance"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected page
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and observed impact
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+    validations:
+      required: false

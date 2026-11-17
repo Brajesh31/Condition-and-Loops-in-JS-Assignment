@@ -1,0 +1,25 @@
+name: "💡 Learning improvement"
+description: "Suggest an exercise or educational improvement."
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Learning objective
+      description: What should a learner understand after this change?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Explain the example, exercise, or documentation change.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Example input and expected output
+    validations:
+      required: false

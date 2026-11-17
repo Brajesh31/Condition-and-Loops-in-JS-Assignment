@@ -1,0 +1,32 @@
+name: "🐛 Bug report"
+description: "Report a reproducible defect in an exercise or repository tool."
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: exercise
+    attributes:
+      label: Affected area
+      options: ["Q1", "Q2", "Q3", "Q4", "Q5", "Documentation", "Scripts", "Workflow"]
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include exact steps, expected output, actual output, and sanitized Console errors.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Attach genuine screenshots or sanitized logs. Do not include secrets.
+    validations:
+      required: false
