@@ -1,0 +1,32 @@
+name: Stale Issues
+
+on:
+  schedule:
+    - cron: "30 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: stale-triage
+  cancel-in-progress: true
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mark stale issues and pull requests
+        uses: actions/stale@v9
+        with:
+          days-before-stale: 90
+          days-before-close: 14
+          stale-issue-label: "stale"
+          stale-pr-label: "stale"
+          exempt-issue-labels: "pinned,security"
+          exempt-pr-labels: "pinned"
+          stale-issue-message: "This issue has been inactive for 90 days. Please add an update if it is still relevant."
+          stale-pr-message: "This pull request has been inactive for 90 days. Please update it if work is continuing."
+          close-issue-message: "Closing due to inactivity. You can reopen with updated context."
+          close-pr-message: "Closing due to inactivity. Reopen or submit a refreshed pull request when ready."
