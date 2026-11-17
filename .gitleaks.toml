@@ -1,0 +1,7 @@
+title = "Repository secret scanning configuration"
+
+[extend]
+useDefault = true
+
+# The project has no expected credentials. Add narrowly scoped allowlists only
+# for verified false positives, with a comment explaining the exact reason.

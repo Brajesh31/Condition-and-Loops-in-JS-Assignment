@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Heuristic scan for obvious private-key markers and suspicious credentials."""
+"""Heuristic scan for private-key markers in tracked text-like source files."""
 from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SKIP = {".git", "node_modules", ".venv", "__pycache__"}
 extensions = {".html", ".js", ".ts", ".json", ".yml", ".yaml", ".py", ".md", ".env"}
-markers = ("-----BEGIN PRIVATE KEY-----", "-----BEGIN RSA PRIVATE KEY-----")
+markers = ("-----BEGIN PRIVATE KEY-----", "-----BEGIN RSA PRIVATE KEY-----", "-----BEGIN OPENSSH PRIVATE KEY-----")
 errors = []
 for path in ROOT.rglob("*"):
     if not path.is_file() or any(part in SKIP for part in path.parts):
@@ -26,4 +26,4 @@ if errors:
         print(" - " + error)
     sys.exit(1)
 print("No obvious private-key markers found.")
-print("This heuristic does not detect every secret and is not a substitute for GitHub secret scanning.")
+print("This heuristic is limited. Use GitHub secret scanning or a dedicated scanner for stronger coverage.")

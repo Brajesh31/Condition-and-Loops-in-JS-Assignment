@@ -1,0 +1,31 @@
+name: Documentation Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate internal Markdown links
+        run: python scripts/validate-docs.py
+      - name: Validate Markdown hygiene
+        run: python scripts/validate-markdown.py
+      - name: Validate project structure
+        run: python scripts/check-project-structure.py
