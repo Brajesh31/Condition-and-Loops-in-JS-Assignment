@@ -26,7 +26,6 @@ This tree is generated from the current tracked GitHub main-branch tree.
 │   │   └── update-readme.yml
 │   ├── CODEOWNERS
 │   ├── dependabot.yml
-│   ├── FUNDING.yml
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── .idea/
 │   └── .gitignore
