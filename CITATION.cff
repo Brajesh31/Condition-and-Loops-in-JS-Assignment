@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use these educational JavaScript exercises, please cite this repository."
+type: software
+title: "Conditions and Loops in JavaScript Assignment"
+authors:
+  - family-names: Kumar
+    given-names: Brajesh
+repository-code: "https://github.com/Brajesh31/Condition-and-Loops-in-JS-Assignment"

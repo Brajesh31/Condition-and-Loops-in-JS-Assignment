@@ -1,0 +1,25 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Python validation tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node.js tools if introduced for future test automation
+node_modules/
+npm-debug.log*
