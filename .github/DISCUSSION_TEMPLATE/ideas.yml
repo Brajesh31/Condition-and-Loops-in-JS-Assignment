@@ -1,0 +1,21 @@
+title: "💡 Learning idea"
+body:
+  - type: textarea
+    id: learning_goal
+    attributes:
+      label: Learning goal
+      description: What should learners be able to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed idea
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example or expected output
+    validations:
+      required: false

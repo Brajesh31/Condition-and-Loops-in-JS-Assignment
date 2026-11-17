@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">Conditions and Loops in JavaScript</title>
+  <desc id="desc">A learning banner with branching decision paths and repeating loop arrows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#312e81"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+  </defs>
+  <rect width="1400" height="420" rx="30" fill="url(#bg)"/>
+  <circle cx="1170" cy="90" r="170" fill="#6366f1" opacity=".12"/>
+  <circle cx="1320" cy="360" r="230" fill="#38bdf8" opacity=".08"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+    <path d="M1020 100 H1130 L1190 160 H1290"/>
+    <path d="M1130 100 L1190 40 H1290"/>
+    <path d="M1190 160 V250 H1290"/>
+    <path d="M1050 300 C1050 235 1140 235 1140 300 C1140 365 1050 365 1050 300" />
+    <path d="M1130 285 L1140 300 L1155 285"/>
+  </g>
+  <g fill="#e0e7ff"><rect x="970" y="82" width="52" height="36" rx="8"/><rect x="1285" y="23" width="58" height="34" rx="8"/><rect x="1285" y="143" width="58" height="34" rx="8"/><rect x="1285" y="233" width="58" height="34" rx="8"/></g>
+  <g fill="#fff" font-family="Arial,Helvetica,sans-serif">
+    <text x="82" y="150" font-size="26" letter-spacing="5" fill="#93c5fd">JAVASCRIPT FUNDAMENTALS</text>
+    <text x="82" y="225" font-size="64" font-weight="700">Conditions</text>
+    <text x="82" y="295" font-size="64" font-weight="700">&amp; Loops</text>
+    <text x="85" y="350" font-size="24" fill="#c7d2fe">Learn decisions. Trace iterations. Understand every output.</text>
+  </g>
+</svg>

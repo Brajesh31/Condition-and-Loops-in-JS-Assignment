@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+<title id="t">Static assignment architecture</title><desc id="d">Learner opens one of five independent HTML pages in a browser. Inline JavaScript logs output to Developer Tools, and local images are loaded from the assets folder.</desc>
+<rect width="1200" height="620" rx="24" fill="#f8fafc"/>
+<text x="60" y="65" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">Assignment Runtime Architecture</text>
+<g font-family="Arial" font-size="20" text-anchor="middle">
+<rect x="70" y="245" width="190" height="100" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="165" y="285" fill="#1e3a8a">Learner</text><text x="165" y="315" font-size="15" fill="#1e40af">Selects exercise</text>
+<rect x="360" y="215" width="250" height="160" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/><text x="485" y="255" fill="#4c1d95">Browser</text><text x="485" y="290" font-size="16" fill="#5b21b6">Q1.html · Q2.html</text><text x="485" y="318" font-size="16" fill="#5b21b6">Q3.html · Q4.html</text><text x="485" y="346" font-size="16" fill="#5b21b6">Q5.html</text>
+<rect x="735" y="105" width="370" height="125" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/><text x="920" y="150" fill="#14532d">Inline JavaScript</text><text x="920" y="184" font-size="16" fill="#166534">Conditions and loop execution</text>
+<rect x="735" y="330" width="370" height="125" rx="18" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/><text x="920" y="375" fill="#7c2d12">Developer Tools Console</text><text x="920" y="409" font-size="16" fill="#9a3412">console.log output</text>
+<rect x="360" y="455" width="250" height="95" rx="18" fill="#fce7f3" stroke="#db2777" stroke-width="3"/><text x="485" y="495" fill="#831843">Local assets</text><text x="485" y="525" font-size="16" fill="#9d174d">Instructional images</text>
+</g>
+<g stroke="#475569" stroke-width="4" fill="none" stroke-linecap="round"><path d="M260 295 H360"/><path d="M610 255 L735 170"/><path d="M920 230 V330"/><path d="M485 375 V455"/></g>
+<g fill="#475569"><path d="M350 286 L365 295 L350 304Z"/><path d="M724 162 L741 166 L730 180Z"/><path d="M911 320 L920 335 L929 320Z"/><path d="M476 445 L485 460 L494 445Z"/></g>
+</svg>

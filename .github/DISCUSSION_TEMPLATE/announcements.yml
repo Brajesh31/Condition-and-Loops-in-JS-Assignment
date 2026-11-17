@@ -1,0 +1,12 @@
+title: "📢 Announcement"
+body:
+  - type: markdown
+    attributes:
+      value: "Share a concise project update. Include only verified changes and link to the relevant commit or release."
+  - type: textarea
+    id: announcement
+    attributes:
+      label: Announcement
+      description: What changed and why does it matter to learners?
+    validations:
+      required: true

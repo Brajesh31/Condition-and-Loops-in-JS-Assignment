@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="t d">
+<title id="t">Loop lifecycle</title><desc id="d">Initialize a counter, check the condition, execute the body, update the counter, and repeat until the condition is false.</desc>
+<rect width="1200" height="600" rx="24" fill="#f8fafc"/><text x="60" y="65" font-family="Arial" font-size="32" font-weight="700" fill="#0f172a">Loop Lifecycle</text>
+<g font-family="Arial" font-size="22" text-anchor="middle">
+<rect x="80" y="235" width="210" height="95" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="185" y="292" fill="#1e3a8a">Initialize</text>
+<path d="M370 282 L480 205 L590 282 L480 360Z" fill="#fef3c7" stroke="#d97706" stroke-width="3"/><text x="480" y="288" fill="#78350f">Condition?</text>
+<rect x="700" y="235" width="210" height="95" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/><text x="805" y="292" fill="#14532d">Execute body</text>
+<rect x="700" y="420" width="210" height="95" rx="16" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/><text x="805" y="477" fill="#4c1d95">Update counter</text>
+<rect x="1000" y="235" width="140" height="95" rx="16" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/><text x="1070" y="292" fill="#7f1d1d">Exit</text>
+</g>
+<g stroke="#475569" stroke-width="4" fill="none" stroke-linecap="round"><path d="M290 282 H370"/><path d="M590 282 H700"/><path d="M805 330 V420"/><path d="M700 467 H480 V360"/><path d="M590 282 H1000"/></g>
+<g fill="#475569"><path d="M360 273 L375 282 L360 291Z"/><path d="M690 273 L705 282 L690 291Z"/><path d="M796 410 L805 425 L814 410Z"/><path d="M470 370 L480 355 L490 370Z"/><path d="M990 273 L1005 282 L990 291Z"/></g>
+<g font-family="Arial" font-size="18" fill="#334155"><text x="625" y="260">true</text><text x="800" y="395">after body</text><text x="620" y="455">repeat</text><text x="625" y="245"> </text><text x="620" y="315">false</text></g>
+</svg>
