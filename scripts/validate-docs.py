@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check relative Markdown link targets in repository Markdown files."""
 from pathlib import Path
+from urllib.parse import unquote
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +17,7 @@ for md in ROOT.rglob("*.md"):
         if not target or target.startswith(("http://", "https://", "mailto:", "tel:")):
             continue
         checked += 1
+        target = unquote(target)
         if not (md.parent / target).resolve().exists():
             errors.append(f"{md.relative_to(ROOT)}: broken link target {target}")
 if errors:
