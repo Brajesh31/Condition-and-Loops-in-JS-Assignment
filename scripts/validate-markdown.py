@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Basic Markdown hygiene checks for trailing whitespace."""
+"""Basic Markdown hygiene checks; preserve intentional two-space hard breaks."""
 from pathlib import Path
 import sys
 
@@ -11,11 +11,12 @@ for path in ROOT.rglob("*.md"):
         continue
     count += 1
     for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        if line != line.rstrip():
-            errors.append(f"{path.relative_to(ROOT)}:{line_no}: trailing whitespace")
+        trailing = len(line) - len(line.rstrip(" "))
+        if trailing == 1 or trailing > 2:
+            errors.append(f"{path.relative_to(ROOT)}:{line_no}: unexpected trailing whitespace")
 if errors:
     print("Markdown hygiene check failed:")
     for error in errors:
         print(" - " + error)
     sys.exit(1)
-print(f"Scanned {count} Markdown files.")
+print(f"Scanned {count} Markdown files; intentional two-space Markdown hard breaks are allowed.")
