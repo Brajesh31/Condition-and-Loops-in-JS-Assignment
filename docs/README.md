@@ -1,8 +1,8 @@
 # 📚 Documentation Hub
 
-This repository contains a static HTML and JavaScript assignment. The documentation catalog covers its actual exercises, learning objectives, architecture, development workflow, quality practices, governance, and maintainer procedures.
+This directory explains the actual static assignment and its maintainer processes. It covers product and learning goals, the Q1-Q5 pages, architecture, development, quality, security, accessibility, privacy, operations, and reusable templates.
 
-> **Accuracy rule:** API, database, authentication, deployment, and infrastructure systems that are absent from the source are explicitly marked as not implemented. Templates for possible future systems do not imply those systems exist.
+> **Accuracy rule:** API, database, authentication, and production infrastructure that are absent from the source are explicitly marked as not implemented. Templates for possible future systems do not imply those systems exist.
 
 ## 🧭 Recommended reading order
 1. [Product overview](product-overview.md)
@@ -93,6 +93,8 @@ This repository contains a static HTML and JavaScript assignment. The documentat
 ## 🖼️ Visual assets
 
 - [assets/architecture-overview.svg](./assets/architecture-overview.svg)
+- [assets/control-flow-logo.svg](./assets/control-flow-logo.svg)
+- [assets/decision-flow.svg](./assets/decision-flow.svg)
 - [assets/loop-lifecycle.svg](./assets/loop-lifecycle.svg)
 - [assets/project-banner.svg](./assets/project-banner.svg)
 
