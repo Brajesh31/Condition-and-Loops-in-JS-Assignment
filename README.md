@@ -217,6 +217,10 @@ flowchart TD
   E --> F
 ```
 
+### Decision flow illustration
+
+![Conditional decision flow](docs/assets/decision-flow.svg)
+
 ### Learner workflow
 
 ```mermaid
