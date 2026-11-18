@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Update README timestamp on manual request
         run: |
           DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
